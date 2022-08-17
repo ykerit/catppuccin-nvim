@@ -12,7 +12,7 @@ local default_config = {
 	},
 	styles = {
 		comments = { "italic" },
-		conditionals = { "italic" },
+		conditionals = { },
 		loops = {},
 		functions = {},
 		keywords = {},
