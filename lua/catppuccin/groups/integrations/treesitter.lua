@@ -35,14 +35,14 @@ function M.get()
 		TSConstBuiltin = { fg = cp.peach, style = cnf.styles.keywords or {} }, -- For constant that are built in the language: nil in Lua.
 		TSFuncBuiltin = { fg = cp.peach, style = cnf.styles.functions or {} }, -- For builtin functions: table.insert in Lua.
 
-		TSNamespace = { fg = cp.blue, style = { "italic" } }, -- For identifiers referring to modules and namespaces.
+		TSNamespace = { fg = cp.blue, style = {} }, -- For identifiers referring to modules and namespaces.
 		TSType = { fg = cp.yellow, style = cnf.styles.types or {} }, -- For types.
-		TSTypeBuiltin = { fg = cp.yellow, style = cnf.styles.properties or "italic" }, -- For builtin types.
+		TSTypeBuiltin = { fg = cp.yellow, style = cnf.styles.properties or "NONE" }, -- For builtin types.
 		TSVariableBuiltin = { fg = cp.red }, -- Variable names that are defined by the languages, like this or self.
 
 		TSFunction = { fg = cp.blue, style = cnf.styles.functions or {} }, -- For function (calls and definitions).
 		TSFuncMacro = { fg = cp.teal, style = cnf.styles.functions or {} }, -- For macro defined functions (calls and definitions): each macro_rules in Ruscp.
-		TSParameter = { fg = cp.maroon, style = { "italic" } }, -- For parameters of a function.
+		TSParameter = { fg = cp.maroon, style = {} }, -- For parameters of a function.
 		TSKeywordFunction = { fg = cp.mauve, style = cnf.styles.keywords or {} }, -- For keywords used to define a fuction.
 		TSKeyword = { fg = keywords, style = cnf.styles.keywords or {} }, -- For keywords that don't fall in previous categories.
 		TSKeywordReturn = { fg = cp.mauve, style = cnf.styles.keywords or {} },
@@ -68,7 +68,7 @@ function M.get()
 		TSStringRegex = { fg = cp.peach, style = cnf.styles.strings or {} }, -- For regexes.
 		-- TSSymbol            = { };    -- For identifiers referring to symbols or atoms.
 		TSVariable = { fg = cp.text, style = cnf.styles.variables or {} }, -- Any variable name that does not have another highlighcp.
-		TSTagAttribute = { fg = cp.teal, style = { "italic" } }, -- Tags like html tag names.
+		TSTagAttribute = { fg = cp.teal, style = {} }, -- Tags like html tag names.
 		TSTag = { fg = cp.mauve }, -- Tags like html tag names.
 		TSTagDelimiter = { fg = cp.sky }, -- Tag delimiter like < > /
 		TSText = { fg = cp.text }, -- For strings considerated text in a markup language.
